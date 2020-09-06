@@ -2,8 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RestoreSources>$(RestoreSources);../local-packages;https://api.nuget.org/v3/index.json</RestoreSources>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExampleLocalLibrary" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>

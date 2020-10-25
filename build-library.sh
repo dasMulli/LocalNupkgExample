@@ -8,7 +8,3 @@ cd "${SRC_DIR}/ExampleLocalLibrary"
 dotnet restore
 dotnet pack -c Release -o ../local-packages
 
-cd "${SRC_DIR}/ExampleApp"
-dotnet add package ExampleLocalLibrary
-dotnet restore
-dotnet run
